@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BarangController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -22,6 +23,7 @@ Route::get('/', function () {
 
 Route::get('/company', [AboutController::class, 'company']);
 Route::get('/homepage', [AboutController::class, 'homepage']);
+Route::resource('barangs', BarangController::class);
 
 Auth::routes();
 
