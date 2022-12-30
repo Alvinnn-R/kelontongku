@@ -38,8 +38,8 @@
     <h1 class="fw-bolder">Welcome to the family grocery store</span></h1>
     <h3 class="">A grocery store that completes your various needs such as staples, fruits, vegetables, and many more</h3>
     <br>
-    <a href="{{url ('/login')}}" class="btn btn-success">Sign Up</a>
-    <a href="{{url ('/produk')}}" class="btn btn-primary">Browse Produk</a>
+    <a href="{{url ('/company')}}" class="btn btn-success">Company</a>
+    <a href="{{url ('/katalog')}}" class="btn btn-primary">Browse Produk</a>
   </div>
   <div class="col-md-4 order-md-1">
     {{-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="360" height="360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 50x50" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> --}}

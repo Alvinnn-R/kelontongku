@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\KatalogController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -22,9 +23,11 @@ Route::get('/', function () {
 });
 
 Route::get('/company', [AboutController::class, 'company']);
-Route::get('/homepage', [AboutController::class, 'homepage']);
+// Route::get('/homepage', [AboutController::class, 'homepage']);
 Route::resource('barangs', BarangController::class);
+Route::get('/katalog', [KatalogController::class, 'index']);
+
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\AboutController::class, 'homepage'])->name('home');

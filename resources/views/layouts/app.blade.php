@@ -24,7 +24,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a href="{{ url('homepage')}}"><img src="{{ asset('images/supermarket.png')}}" width="60" height="50" class="d-inline-block" alt="" loading="lazy"></a>
+                <a href="{{ url('home')}}"><img src="{{ asset('images/supermarket.png')}}" width="60" height="50" class="d-inline-block" alt="" loading="lazy"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,14 +33,14 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto" style="margin-left: 18px;">
                             <li>
-                                <a class="nav-link" href="{{url ('/produk')}}">Produk</a>
+                                <a class="nav-link" href="{{url ('/katalog')}}">Produk</a>
                             </li>
                             <li>
                                 <a class="nav-link" href="{{url ('/company')}}">About</a>
                             </li>
                             @can('isAdmin')
                             <li>
-                                <a class="nav-link" href="{{url ('/crud')}}">Manajemen Barang</a>
+                                <a class="nav-link" href="{{url ('/barangs')}}">Manajemen Barang</a>
                             </li>
                             @endcan
                     </ul>

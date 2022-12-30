@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
+use Auth;
+
 class LoginController extends Controller
 {
     /*
@@ -36,5 +38,16 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    public function redirectTo()
+    {
+        if(Auth::user()->role == 'admin') {
+            $this->redirectTo = route('barangs.index');
+            return $this->redirectTo;
+        } else {
+            $this->redirectTo = route('home', Auth::user()->user_id);
+            return $this->redirectTo;
+        }
     }
 }

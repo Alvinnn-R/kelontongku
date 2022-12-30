@@ -12,13 +12,13 @@
                         @method('PUT')
 
                         <div class="form-group">
-                            <label class="font-weight-bold">GAMBAR</label>
+                            <label class="font-weight-bold">Gambar</label>
                             <input type="file" class="form-control" name="image">
                         </div>
 
-                        <div class="form-group">
-                            <label class="font-weight-bold">NAMA</label>
-                            <input type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" value="{{ old('nama', $barang->nama) }}" placeholder="Masukkan Nama Barang">
+                        <div class="form-group mt-2">
+                            <label class="font-weight-bold">Nama</label>
+                            <input type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" value="{{ old('nama', $barang->nama) }}" placeholder="Masukkan Nama Produk">
                         
                             <!-- error message untuk title -->
                             @error('nama')
@@ -28,9 +28,9 @@
                             @enderror
                         </div>
 
-                        <div class="form-group">
-                            <label class="font-weight-bold">Description</label>
-                            <textarea class="form-control @error('description') is-invalid @enderror" name="description" rows="5" placeholder="Masukkan description">{{ old('description', $barang->description) }}</textarea>
+                        <div class="form-group mt-2">
+                            <label class="font-weight-bold">Deskripsi</label>
+                            <textarea class="form-control @error('description') is-invalid @enderror" name="description" rows="5" placeholder="Masukkan Deskripsi">{{ old('description', $barang->description) }}</textarea>
                         
                             <!-- error message untuk content -->
                             @error('description')
@@ -40,9 +40,9 @@
                             @enderror
                         </div>
 
-                        <div class="form-group">
-                            <label class="font-weight-bold">HARGA</label>
-                            <input type="number" class="form-control @error('harga') is-invalid @enderror" name="harga" value="{{ old('harga', $barang->harga) }}" placeholder="Masukkan harga Barang">
+                        <div class="form-group mt-2">
+                            <label class="font-weight-bold">Harga</label>
+                            <input type="number" class="form-control @error('harga') is-invalid @enderror" name="harga" value="{{ old('harga', $barang->harga) }}" placeholder="Masukkan Harga Produk">
                         
                             <!-- error message untuk title -->
                             @error('harga')
