@@ -56,7 +56,13 @@ php artisan migrate --seed
 php artisan serve
 ```
 
-## Available user for test
+#### Website in free Hosting 
+- **000webhost**
+```
+https://kelontongku.000webhostapp.com/
+```
+
+## Available user for test in webhost
 - **admin**
 - - > admin@gmail.com
 - - > password123
